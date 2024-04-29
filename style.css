@@ -1,0 +1,83 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: #112 url('img/home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-shadow:
+    1px 5px 4px rgba(0, 0, 0, .3),
+    0 0 2px rgba(255, 255, 255, 1),
+    0 0 10px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 1),
+    0 0 40px #4c00ff,
+    0 0 70px #4c00ff,
+    0 0 80px #4c00ff,
+    0 0 100px #4c00ff;
+}
+
+.home span {
+    animation: blink .3s infinite alternate;
+}
+
+.home span.delay {
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+}
+
+
+@keyframes blink {
+    0% {}
+
+    50% {}
+
+    60% {
+        text-shadow:
+        0 0 2px rgba(255, 255, 255, .1),
+        0 0 10px rgba(255, 255, 255, .4);
+
+        text-stroke: 2px rgba(255, 255, 255, 0.05);
+    }
+
+    70% {
+        text-shadow:
+        0 0 2px rgba(255, 255, 255, 1),
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 1),
+        0 0 30px rgba(255, 255, 255, 1),
+        0 0 40px #4c00ff,
+        0 0 70px #4c00ff,
+        0 0 80px #4c00ff,
+        0 0 100px #4c00ff;
+    }
+
+    80% {
+        text-shadow:
+        0 0 2px rgba(255, 255, 255, .1),
+        0 0 10px rgba(255, 255, 255, .4);
+
+        text-stroke: 2px rgba(255, 255, 255, 0.05);
+    }
+
+    100% {
+        text-shadow:
+        0 0 2px rgba(255, 255, 255, 1),
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 1),
+        0 0 30px rgba(255, 255, 255, 1),
+        0 0 40px #4c00ff,
+        0 0 70px #4c00ff,
+        0 0 80px #4c00ff,
+        0 0 100px #4c00ff;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
