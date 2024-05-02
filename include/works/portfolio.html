@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <div class="bg-white py-4 sm:py-10 px-4 rounded w-11/12 max-h-[90vh] overflow-y-auto">
+    <div class="bg-gray-100 py-4 sm:py-10 px-4 rounded w-11/12 max-h-[90vh] overflow-y-auto">
         <div class="text-right mb-2">
-            <button id="closeModalBtn" class="text-gray-500 hover:text-black focus:outline-none">
+            <button id="closeModalBtn" onclick="closeModal()">
                 <img src="img/close.svg" alt="Close" class="h-6 w-6" />
             </button>
         </div>
@@ -11,7 +11,7 @@
                 <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="h-2/3 sm:h-auto mb-2"
                     id="mainImage" />
                 <div class="flex justify-center p-2 gap-4">
-                    <div class="flex justify-center p-2 gap-4">
+                    <div class="flex flex-wrap justify-center p-2 gap-4">
                         <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image"
                             class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
                             onclick="changeImage(this.src)" />
@@ -27,31 +27,31 @@
             <div class="text-black px-2 w-full sm:w-2/5 mt-4 sm:mt-0">
                 <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
                     <div class="absolute -top-4 left-3 flex items-center text-black">
-                        <p class="bg-white p-1 font-bold">
+                        <p class="bg-gray-100 p-1 font-bold">
                             ポートフォリオ
                         </p>
                     </div>
                     <p class="leading-5 sm:leading-6">
                         このWebページです。<br>
-                        HTMLとCSS、TailwindCss、jQueryを使用し、1枚のLPを作成しました。<br>
-                        以前chart.jsを使ったことがあり、更に理解を深めるべくスキルチャートとして採用しました<br>
+                        HTML。CSS、TailwindCss、jQueryを使用し、1枚のLPを作成しました。<br>
+                        以前chart.jsを使ったことがあり、更に理解を深めるべくスキルチャートとして採用しました。<br>
                         スマホサイズまで対応させております。<br>
                         新たなアイデアや製作物が増えたタイミングで更に良いサイトに仕上げていきます。<br>
                     </p>
                 </div>
                 <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
                     <div class="absolute -top-4 left-3 flex items-center text-black">
-                        <p class="bg-white p-1 font-bold">
+                        <p class="bg-gray-100 p-1 font-bold">
                             使用言語など
                         </p>
                     </div>
                     <p class="leading-5 sm:leading-6">
-                        HTML / css / TailwindCss / jQuery
+                        HTML / css / TailwindCss / jQuery /chart.js
                     </p>
                 </div>
                 <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded">
                     <div class="absolute -top-4 left-3 flex items-center text-black">
-                        <p class="bg-white p-1 font-bold">
+                        <p class="bg-gray-100 p-1 font-bold">
                             リンク
                         </p>
                     </div>

@@ -662,8 +662,24 @@ video {
   display: flex;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
+}
+
+.aspect-\[\] {
+  aspect-ratio: ;
+}
+
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .h-12 {
@@ -1150,6 +1166,10 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:h-2\/3 {
+    height: 66.666667%;
   }
 
   .sm\:w-2\/3 {
