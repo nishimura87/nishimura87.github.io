@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/output.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/include.js"></script>
     <script src="js/script.js"></script>
     <script src="js/chart_script.js"></script>
     <title>Kenya Nishimura's Portfolio</title>
@@ -30,41 +31,7 @@
             K<span>en</span>ya Nishimura<span class="mr-2">'s</span> Port <span class="delay">f</span>olio
         </div>
     </div>
-    <header class="flex justify-center py-8 bg-gray-600">
-        <div class="flex flex-wrap justify-center gap-4 text-base sm:text-md">
-            <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1">
-                <a href="#about" class="flex items-center gap-1">
-                    <img src="img/about.svg" alt="About Image" class="w-6 h-6">
-                    <div>About</div>
-                </a>
-            </div>
-            <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content2">
-                <a href="#profile" class="flex items-center gap-1">
-                    <img src="img/profile.svg" alt="Profile Image" class="w-6 h-6">
-                    <div>Profile</div>
-                </a>
-            </div>
-            <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content3">
-                <a href="#skill" class="flex items-center gap-1">
-                    <img src="img/skill.svg" alt="Skill Image" class="w-6 h-6">
-                    <div>Skill</div>
-                </a>
-            </div>
-            <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content4">
-                <a href="#works" class="flex items-center gap-1">
-                    <img src="img/works.svg" alt="Works Image" class="w-6 h-6">
-                    <div>Works</div>
-                </a>
-            </div>
-            <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content5">
-                <a href="#contact" class="flex items-center gap-1">
-                    <img src="img/contact.svg" alt="Contact Image" class="w-6 h-6">
-                    <div>Contact</div>
-                </a>
-            </div>
-        </div>
-    </header>
-
+    <div id="header"></div>
     <main>
         <div class="flex justify-center">
             <div class="w-full">
@@ -173,8 +140,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- モーダル内容 -->
+        <!-- モーダル -->
         <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-black opacity-50 hidden"></div>
         <!-- nishimura's potfolio -->
         <div id="modal" class="fixed w-full h-full flex justify-center items-center hidden overflow-hidden">
@@ -186,7 +152,8 @@
                 </div>
                 <div class="flex flex-col sm:flex-row text-sm sm:text-base">
                     <div class="w-full flex flex-col justify-center sm:w-3/5">
-                        <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="h-2/3 sm:h-auto mb-2" id="mainImage" />
+                        <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="h-2/3 sm:h-auto mb-2"
+                            id="mainImage" />
                         <div class="flex justify-center p-2 gap-4">
                             <div class="flex justify-center p-2 gap-4">
                                 <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image"
@@ -199,7 +166,6 @@
                                     class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
                                     onclick="changeImage(this.src)" />
                             </div>
-
                         </div>
                     </div>
                     <div class="text-black px-2 w-full sm:w-2/5 mt-4 sm:mt-0">
@@ -243,34 +209,6 @@
             </div>
         </div>
     </main>
-    <footer class="flex justify-center py-5 bg-gray-600">
-        <div class="text-center">
-            <div class="flex justify-center gap-3 text-xs">
-                <a href="#about" class="cursor-pointer hover:bg-gray-900 p-1">
-                    About
-                </a>
-                <p class="p-1"> | </p>
-                <a href="#profile" class="cursor-pointer hover:bg-gray-900 p-1">
-                    Profile
-                </a>
-                <p class="p-1"> | </p>
-                <a href="#skill" class="cursor-pointer hover:bg-gray-900 p-1">
-                    Skill
-                </a>
-                <p class="p-1"> | </p>
-                <a href="#works" class="cursor-pointer hover:bg-gray-900 p-1">
-                    Works
-                </a>
-                <p class="p-1"> | </p>
-                <a href="#contact" class="cursor-pointer hover:bg-gray-900 p-1">
-                    Contact
-                </a>
-            </div>
-            <div class="mt-5">
-                <p class="text-gray-800" style="font-size: 10px;">Copyright©Kenya Nishimura. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    
+    <div id="footer"></div>
 </body>
 </html>

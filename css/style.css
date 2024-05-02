@@ -90,11 +90,11 @@
 }
 
 .sp_br {
-    display: none; //768px以上では改行タグを無効に。
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
     .sp_br {
-        display: block; //768px未満で改行タグを有効に。
+        display: block;
     }
 }
