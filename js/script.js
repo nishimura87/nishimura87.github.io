@@ -38,8 +38,9 @@ $(function() {
     });
 });
 
-function changeImage(src) {
-    document.getElementById("mainImage").src = src;
+// ポートフォリオ用の画像を変更する関数
+function changePortfolioImage(src) {
+    document.getElementById("portfolio_mainImage").src = src;
 }
 
 // モトパドック用の画像を変更する関数
