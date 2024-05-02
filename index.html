@@ -11,55 +11,60 @@
     <meta name="description" content="西村剣矢のポートフォリオです。">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+    <script src="js/script.js"></script>
+    <script src="js/chart_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Kenya Nishimura's Portfolio</title>
 </head>
 
 <body class="bg-gray-800 text-white">
     <a href="#"
-        class="fixed bottom-12 right-12 flex items-center justify-center w-12 h-12 bg-white border-2 border-black rounded-full">
+        class="fixed bottom-5 right-5 flex items-center justify-center w-12 h-12 bg-white border-2 border-black rounded-full">
         <div class="w-4 h-4 border-t-2 border-r-2 border-indigo-500 transform -rotate-45 translate-y-1/4"></div>
     </a>
     <div class="home">
-        K<span>en</span>ya Nishimura<span class="mr-2">'s</span>Port <span class="delay">f</span>olio
+        <div class="px-2 text-center">
+            K<span>en</span>ya Nishimura<span class="mr-2">'s</span> Port <span class="delay">f</span>olio
+        </div>
     </div>
-    <header class="flex justify-center py-10 bg-gray-600">
-        <div class="flex justify-center gap-4 text-xl">
+    <header class="flex justify-center py-8 bg-gray-600">
+        <div class="flex flex-wrap justify-center gap-4 text-base sm:text-md">
             <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1">
-                <img src="img/about.svg" alt="Profile Image" style="width: 25px; height: 25px;">
-                <a href="#about">About</a>
+                <img src="img/about.svg" alt="Profile Image" class="w-6 h-6">
+                <div><a href="#about">About</a></div>
             </div>
             <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content2">
-                <img src="img/profile.svg" alt="Profile Image" style="width: 25px; height: 25px;">
+                <img src="img/profile.svg" alt="Profile Image" class="w-6 h-6">
                 <a href="#profile">Profile</a>
             </div>
             <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content3">
-                <img src="img/skill.svg" alt="Profile Image" style="width: 25px; height: 25px;">
+                <img src="img/skill.svg" alt="Profile Image" class="w-6 h-6">
                 <a href="#skill">Skill</a>
             </div>
             <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content4">
-                <img src="img/works.svg" alt="Profile Image" style="width: 25px; height: 25px;">
+                <img src="img/works.svg" alt="Profile Image" class="w-6 h-6">
                 <a href="#works">Works</a>
             </div>
             <div class="content flex items-center gap-1 cursor-pointer hover:bg-gray-900 p-1" id="header_content5">
-                <img src="img/contact.svg" alt="Profile Image" style="width: 25px; height: 25px;">
+                <img src="img/contact.svg" alt="Profile Image" class="w-6 h-6">
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </header>
+
     <main>
         <div class="flex justify-center">
             <div class="w-full">
                 <div class="h-screen flex justify-center items-center" id="about">
-                    <div class="w-2/3">
+                    <div class="w-4/5 sm:w-2/3">
                         <div class="mb-20 flex items-center justify-center gap-1">
-                            <img src="img/about.svg" alt="About Image" style="width: 50px; height: 50px;">
-                            <h2 class="text-5xl font-bold">About</h2>
+                            <img src="img/about.svg" alt="About Image" class="w-12 h-12">
+                            <h2 class="text-3xl sm:text-5xl font-bold">About</h2>
                         </div>
-                        <div class="p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900">
+                        <div class="p-5 sm:p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900 text-sm sm:text-base">
                             ここはエンジニアNishimuraのポートフォリオサイトです。<br>
                             これまでの制作物、身につけたスキルをまとめています。<br>
                             技術と情熱が詰まったプロジェクトをゆっくりとご覧いただき、<br>
@@ -68,12 +73,12 @@
                     </div>
                 </div>
                 <div class="h-screen flex justify-center items-center bg-gray-600" id="profile">
-                    <div class="w-2/3">
+                    <div class="w-4/5 sm:w-2/3">
                         <div class="mb-20 flex items-center justify-center gap-1">
-                            <img src="img/profile.svg" alt="Profile Image" style="width: 50px; height: 50px;">
-                            <h2 class="text-5xl font-bold">Profile</h2>
+                            <img src="img/profile.svg" alt="Profile Image" class="w-12 h-12">
+                            <h2 class="text-3xl sm:text-5xl font-bold">Profile</h2>
                         </div>
-                        <div class="p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900">
+                        <div class="p-5 sm:p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900 text-sm sm:text-base">
                             <p class="text-right mb-2">（2024年4月29日更新）</p>
                             山口県出身のエンジニア。平成7年生まれ、高専で制御情報工学を専攻。<br>
                             社会人歴は7年目となり、webアプリエンジニアとしては2年目。<br>
@@ -86,55 +91,79 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-screen flex justify-center items-center" id="skill">
-                    <div class="w-2/3">
-                        <div class="mb-20 flex items-center justify-center gap-1">
-                            <img src="img/skill.svg" alt="Skill Image" style="width: 50px; height: 50px;">
-                            <h2 class="text-5xl font-bold">Skill</h2>
+                <div class="h-auto sm:h-screen flex justify-center items-center py-5 sm:py-0" id="skill">
+                    <div class="w-5/6">
+                        <div class="mb-5 flex items-center justify-center gap-1">
+                            <img src="img/skill.svg" alt="Skill Image" class="w-12 h-12">
+                            <h2 class="text-3xl sm:text-5xl font-bold">Skill</h2>
                         </div>
-                        <div class="p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900 mx-20">
-                            
+                        <div class="flex justify-center">
+                            <p class="mb-2 text-sm sm:text-base">
+                                自己修練を重ね、多岐にわたるスキルを獲得しました。フロントエンドからバックエンドまで幅広い領域に手を伸ばし、オールラウンドな対応力を培ってきました。しかし、その分野全体を浅くしか理解しておらず、専門性に欠けることを自覚しています。今後は特にフロントエンド開発に力を入れ、フルスタックな開発者を目指します。<br><br>
+                                <span class="text-xs sm:text-sm">＊業務で実際に使用した技術のみ掲載しております。</span>
+                            </p>
+                        </div>
+                        <div class="flex sm:flex-row flex-col gap-1 bg-gray-100 border-2 border-solid rounded box-with-shadow">
+                            <div class="md:w-1/3 w-full h-2/3 p-2">
+                                <canvas id="front_chart"></canvas>
+                            </div>
+                            <div class="md:w-1/3 w-full h-2/3 p-2">
+                                <canvas id="back_chart"></canvas>
+                            </div>
+                            <div class="md:w-1/3 w-full h-2/3 p-2">
+                                <canvas id="other_chart"></canvas>
+                            </div>
+                        </div>
+                        <p class="font-bold text-center text-xs sm:text-sm mt-2">評価基準</p>
+                        <div class="flex flex-wrap gap-2 text-center justify-center text-xs sm:text-sm mt-2">
+                            <div>1: 軽く使用した程度</div>
+                            <div>2: 実務で数ヶ月以上使用しているがもう少し習熟が必要</div>
+                            <div>3: 実務レベルで自由に駆使できる</div>
+                            <div>4: 複雑な問題を解決できる</div>
+                            <div>5: 他人を指導できるレベル</div>
                         </div>
                     </div>
                 </div>
-                <div class="h-screen flex justify-center items-center bg-gray-600" id="works">
-                    <div class="w-5/6">
-                        <div class="mb-20 flex items-center justify-center gap-1">
-                            <img src="img/works.svg" alt="Works Image" style="width: 50px; height: 50px;">
-                            <h2 class="text-5xl font-bold">Works</h2>
+                <div class="h-auto sm:h-screen flex justify-center items-center bg-gray-600" id="works">
+                    <div class="w-5/6 my-5 sm:my-0">
+                        <div class="mb-10 flex items-center justify-center gap-1">
+                            <img src="img/works.svg" alt="Works Image" class="w-12 h-12">
+                            <h2 class="text-3xl sm:text-5xl font-bold">Works</h2>
                         </div>
-                        <div class="flex gap-10 h-48">
-                            <div class="relative flex-grow">
-                                <div id="portfolio" class="absolute inset-0 bg-cover bg-center cursor-pointer transform transition-transform duration-300 hover:scale-105" style="background-image: url('works_img/portfolio.png');"></div>
-                                <p class="absolute -bottom-10 left-0 right-0 text-center ">nishimura's potfolio
+                        <div class="flex justify-center">
+                            <p class="mb-5 text-sm sm:text-base">
+                                これまでに挑戦してきた制作物を紹介いたします。
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-10 h-auto sm:flex-row sm:gap-10 sm:h-48 w-full">
+                            <div id="portfolio"
+                                class="bg-cover bg-center cursor-pointer transform transition-transform duration-300 hover:scale-105 w-full sm:w-1/3">
+                                <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="object-contain">
+                                <p class="text-center mt-1">
+                                    nishimura's potfolio
                                 </p>
                             </div>
-                            <div id="imageContainer" class="relative flex-grow">
-                                <div class="absolute inset-0 bg-cover bg-center cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                                    style="background-image: url('works_img/portfolio.png');"></div>
-                                <p class="absolute -bottom-10 left-0 right-0 text-center ">nishimura's potfolio
-                                </p>
-                            </div>
-                            <div class="relative flex-grow">
-                                <div class="absolute inset-0 bg-cover bg-center cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                                    style="background-image: url('works_img/portfolio.png');"></div>
-                                <p class="absolute -bottom-10 left-0 right-0 text-center ">nishimura's potfolio
+                            <div id="merke"
+                                class="bg-cover bg-center cursor-pointer transform transition-transform duration-300 hover:scale-105 w-full sm:w-1/3">
+                                <img src="works_img/merke.png" alt="Portfolio Image" class="object-contain">
+                                <p class="text-center mt-1">
+                                    merke
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="h-screen flex justify-center items-center" id="contact">
-                    <div class="w-2/3">
+                    <div class="w-4/5 sm:w-2/3">
                         <div class="mb-20 flex items-center justify-center gap-1">
-                            <img src="img/contact.svg" alt="Contact Image" style="width: 50px; height: 50px;">
-                            <h2 class="text-5xl font-bold">Contact</h2>
+                            <img src="img/contact.svg" alt="Contact Image" class="w-12 h-12">
+                            <h2 class="text-3xl sm:text-5xl font-bold">Contact</h2>
                         </div>
-                        <p class="mx-20 mb-10 text-center">
+                        <p class="mx-0 sm:mx-20 mb-10 text-center">
                             最後までご覧いただきありがとうございました!<br>
                             何かありましたら、下記よりご連絡ください。
                         </p>
-                        <div class="p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900 mx-20">
+                        <div class="p-10 border-solid border-white border rounded-md text-center leading-8 bg-gray-900 text-sm sm:text-base mx-0 sm:mx-20">
                             nishimura.k87@gmail.com
                         </div>
                     </div>
@@ -144,43 +173,60 @@
 
         <!-- モーダル内容 -->
         <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-black opacity-50 hidden"></div>
-        <div id="modal" class="fixed w-full h-full flex justify-center items-center hidden">
-            <div class="bg-white py-10 px-8 rounded-lg flex w-11/12 bg-opacity-100 relative">
-                <button id="closeModalBtn"
-                    class="absolute top-0 right-0 mt-4 mr-4 text-gray-500 hover:text-black focus:outline-none">
-                    <img src="img/close.svg" alt="Close" class="h-6 w-6" />
-                </button>
-                <img id="modalImage" alt="Portfolio Image" class="w-1/2" />
-                <div class="text-black px-2 w-1/2 relative">
-                    <div class="relative p-4 border-2 border-gray-300 rounded mb-7">
-                        <div class="absolute -top-4 left-3 flex items-center text-black">
-                            <p class="text-base bg-white p-1 font-bold">
-                                ポートフォリオ
-                            </p>
+        <!-- nishimura's potfolio -->
+        <div id="modal" class="fixed w-full h-full flex justify-center items-center">
+            <div class="bg-white py-4 sm:py-10 px-4 rounded-lg w-11/12 bg-opacity-100">
+                <div class="text-right mb-2">
+                    <button id="closeModalBtn" class="text-gray-500 hover:text-black focus:outline-none">
+                        <img src="img/close.svg" alt="Close" class="h-6 w-6" />
+                    </button>
+                </div>
+                <div class="flex flex-col sm:flex-row text-sm sm:text-base">
+                    <div class="w-full flex flex-col justify-center sm:w-3/5">
+                        <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="h-2/3 sm:h-auto mb-2" id="mainImage" />
+                        <div class="flex justify-center p-2 gap-4">
+                            <img src="img/works/portfolio/portfolio.png" alt="Portfolio Image" class="w-20 h-20 sm:w-24 sm:h-24 object-cover"
+                                onclick="changeImage(this.src)" />
+                            <img src="img/works/portfolio/skill.png" alt="Skill Image" class="w-20 h-20 sm:w-24 sm:h-24 object-cover"
+                                onclick="changeImage(this.src)" />
+                            <img src="img/works/portfolio/responsive.png" alt="Responsive Image" class="w-20 h-20 sm:w-24 sm:h-24 object-cover"
+                                onclick="changeImage(this.src)" />
                         </div>
-                        <p class="leading-6">
-                            このWebページです。<br>
-                            HTMLとCSS、TailwindCss、jQueryを使用し、1枚のLPを作成しました。<br>
-                            新たなアイデアや製作物が増えたタイミングで更に良いサイトにしていきます。<br>
-                        </p>
                     </div>
-                    <div class="relative p-4 border-2 border-gray-300 rounded mb-7">
-                        <div class="absolute -top-4 left-3 flex items-center text-black">
-                            <p class="text-base bg-white p-1 font-bold">
-                                使用言語など
+                    <div class="text-black px-2 w-full sm:w-2/5 mt-4 sm:mt-0">
+                        <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
+                            <div class="absolute -top-4 left-3 flex items-center text-black">
+                                <p class="bg-white p-1 font-bold">
+                                    ポートフォリオ
+                                </p>
+                            </div>
+                            <p class="leading-5 sm:leading-6">
+                                このWebページです。<br>
+                                HTMLとCSS、TailwindCss、jQueryを使用し、1枚のLPを作成しました。<br>
+                                以前chart.jsを使ったことがあり、更に理解を深めるべくスキル表で採用しました<br>
+                                新たなアイデアや製作物が増えたタイミングで更に良いサイトに仕上げていきます。<br>
                             </p>
                         </div>
-                        <p>HTML / css / TailwindCss / JavaScript</p>
-                    </div>
-                    <div class="relative p-4 border-2 border-gray-300 rounded">
-                        <div class="absolute -top-4 left-3 flex items-center text-black">
-                            <p class="text-base bg-white p-1 font-bold">
-                                リンク
+                        <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
+                            <div class="absolute -top-4 left-3 flex items-center text-black">
+                                <p class="bg-white p-1 font-bold">
+                                    使用言語など
+                                </p>
+                            </div>
+                            <p class="leading-5 sm:leading-6">
+                                HTML / css / TailwindCss / jQuery
                             </p>
                         </div>
-                        <div class="text-blue-600">
-                            <a href="https://nishimura87.github.io/portfolio/">サイトURL</a><br>
-                            <a href="https://github.com/nishimura87/portfolio.git">GitHub</a>
+                        <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded">
+                            <div class="absolute -top-4 left-3 flex items-center text-black">
+                                <p class="bg-white p-1 font-bold">
+                                    リンク
+                                </p>
+                            </div>
+                            <div class="text-blue-600 leading-5 sm:leading-6">
+                                <a href="https://nishimura87.github.io/portfolio/">サイトURL</a><br>
+                                <a href="https://github.com/nishimura87/portfolio.git">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,6 +261,6 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    
 </body>
 </html>

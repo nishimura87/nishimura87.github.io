@@ -1,13 +1,11 @@
 $(document).ready(function() {
     var $portfolio = $('#portfolio');
     var $modal = $('#modal');
-    var $modalImage = $('#modalImage');
     var $overlay = $('#overlay');
     var $closeModalBtn = $('#closeModalBtn');
 
     $portfolio.on('click', function() {
         $modal.removeClass('hidden');
-        $modalImage.attr('src', $portfolio.css('backgroundImage').replace(/url\(['"]?(.*?)['"]?\)/, '$1'));
         $overlay.removeClass('hidden');
     });
 
@@ -28,3 +26,7 @@ $(document).ready(function() {
         $overlay.addClass('hidden');
     });
 });
+
+function changeImage(src) {
+        document.getElementById("mainImage").src = src;
+    }

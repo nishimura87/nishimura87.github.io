@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 400px;
-    background: #112 url('img/home.png');
+    background: #112 url('../img/home.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Pacifico', cursive;
@@ -93,21 +93,12 @@ html {
     z-index: 50;
 }
 
-.caption_box {
-    position: relative;
-    margin-top: 1em;
-    padding: 1em 2em;
-    border: 1px solid black;
+.sp_br {
+    display: none; //768px以上では改行タグを無効に。
 }
 
-.caption_box .caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    font-size: 1em;
-    padding: 0 1em;
-    margin: 0;
-    background-color: white;
-    transform: translateY(-50%) translateX(1em);
+@media screen and (max-width: 768px) {
+    .sp_br {
+        display: block; //768px未満で改行タグを有効に。
+    }
 }
