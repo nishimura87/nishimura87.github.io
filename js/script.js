@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     var $portfolio = $('#portfolio');
     var $modal = $('#modal');
     var $overlay = $('#overlay');
@@ -28,5 +28,5 @@ $(document).ready(function() {
 });
 
 function changeImage(src) {
-        document.getElementById("mainImage").src = src;
-    }
+    document.getElementById("mainImage").src = src;
+}

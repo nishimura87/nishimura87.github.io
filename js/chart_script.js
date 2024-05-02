@@ -3,10 +3,10 @@ window.onload = (e)=>{
     new Chart(ctx1, {
         type: 'radar',
         data: {
-            labels: ['HTML/CSS', 'TailwindCSS', 'JavaScript', 'jQuery', 'Vue.js', 'Nuxt.js', 'React.js'],
+            labels: ['HTML/CSS', 'JavaScript', 'jQuery', 'TailwindCSS', 'Vue.js', 'Nuxt.js', 'React.js'],
             datasets: [{
                 label: 'Front-end',
-                data: [4, 4, 3, 3, 1, 1, 1],
+                data: [4, 3, 3, 3, 2, 2, 1],
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgb(255, 99, 132)',
                 pointBackgroundColor: 'rgb(255, 99, 132)',
@@ -56,10 +56,10 @@ window.onload = (e)=>{
     new Chart(ctx2, {
         type: 'radar',
         data: {
-            labels: ['laravel', 'PHP', 'MySQL', 'NginX', 'AWS'],
+            labels: ['laravel', 'PHP', 'MySQL', 'NginX', 'AWS' ,'Firebase'],
             datasets: [{
                 label: 'Back-end',
-                data: [4, 3, 3, 2, 2],
+                data: [4, 3, 3, 2, 2, 1],
                 backgroundColor: 'rgba(14, 165, 233, 0.2)',
                 borderColor: 'rgb(14, 165, 233)',
                 pointBackgroundColor: 'rgb(14, 165, 233)',
