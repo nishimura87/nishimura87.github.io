@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<div class="bg-gray-100 py-4 sm:py-10 px-4 rounded w-11/12 max-h-[90vh] overflow-y-auto">
+    <div class="text-right mb-2">
+        <button id="closeModalBtn" onclick="closeModal()">
+            <img src="img/close.svg" alt="Close" class="h-6 w-6" />
+        </button>
+    </div>
+    <div class="flex flex-col sm:flex-row text-sm sm:text-base">
+        <div class="w-full flex flex-col justify-center sm:w-3/5">
+            <img src="img/works/marke/home.png" alt="Home Image" class="h-2/3 sm:h-auto mb-2"
+                id="marke_mainImage" />
+            <div class="flex justify-center p-2 gap-4">
+                <div class="flex flex-wrap justify-center p-2 gap-4">
+                    <img src="img/works/marke/home.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                    <img src="img/works/marke/detail_item.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                    <img src="img/works/marke/cart.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                    <img src="img/works/marke/order.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                    <img src="img/works/marke/thanks.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                    <img src="img/works/marke/credit.png" alt="Portfolio Image"
+                        class="w-20 h-20 sm:w-24 sm:h-24 object-cover transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        onclick="changeMarkeImage(this.src)" />
+                </div>
+            </div>
+        </div>
+        <div class="text-black px-2 w-full sm:w-2/5 mt-4 sm:mt-0">
+            <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
+                <div class="absolute -top-4 left-3 flex items-center text-black">
+                    <p class="bg-gray-100 p-1 font-bold">
+                        Marke ECサイト
+                    </p>
+                </div>
+                <p class="leading-5 sm:leading-6">
+                    スクール卒業試験でECサイトを作成しました。<br>
+                    デザイン〜デプロイまで全てを実施いたしました。<br>
+                    GoogleMapやStripeをAPI連携させ、マップ表示・クレジット決済を可能としています。<br>
+                    ユーザー認証を取り入れ、カート機能にはセッションを利用して購入できます。<br>
+                    管理者は商品やニュースのCRUDが可能です。<br>
+                    UI、UXに力を入れるべく今後も少しずつアップデートしていこうかなと思います。<br>
+                    サーバーはAWSを利用しました。
+                </p>
+            </div>
+            <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded mb-4 sm:mb-7">
+                <div class="absolute -top-4 left-3 flex items-center text-black">
+                    <p class="bg-gray-100 p-1 font-bold">
+                        使用言語など
+                    </p>
+                </div>
+                <p class="leading-5 sm:leading-6">
+                    HTML / css / Laravel / JavaScript / AWS
+                </p>
+            </div>
+            <div class="relative p-3 sm:p-4 border-2 border-gray-300 rounded">
+                <div class="absolute -top-4 left-3 flex items-center text-black">
+                    <p class="bg-gray-100 p-1 font-bold">
+                        リンク
+                    </p>
+                </div>
+                <div class="text-blue-600 leading-5 sm:leading-6">
+                    <p>現在サイトは停止中</p><br>
+                    <a href="https://github.com/nishimura87/motopaddockpj.git">GitHub</a><br>
+                    <a href="https://docs.google.com/spreadsheets/d/19z0tItE8hAnfw22bb1_jar3Cawj8lVr0IcZ37H82VFM/edit?usp=sharing">設計書</a><br>
+                    <a href="https://www.figma.com/file/5b4WBG7nzcZijLPV3nND8H/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3EC%E3%82%B5%E3%82%A4%E3%83%88(%E8%87%AA%E4%BD%9C)?type=design&node-id=33%3A506&mode=design&t=eaVM2lRAtGULQ8lu-1">Figma</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,6 +1,4 @@
 $(function() {
-    var $portfolio = $('#portfolio');
-    var $motopaddock = $('#motopaddock');
     var $modal = $('#modal');
     var $overlay = $('#overlay');
 
@@ -21,6 +19,11 @@ $(function() {
     // モトパドックをクリックしたときの処理
     $('#motopaddock').on('click', function () {
         toggleModal('motopaddock');
+    });
+
+    // markeをクリックしたときの処理
+    $('#marke').on('click', function () {
+        toggleModal('marke');
     });
 
     $modal.on('click', function(e) {
@@ -47,8 +50,13 @@ function changePortfolioImage(src) {
 function changeMotopaddockImage(src) {
     document.getElementById("motopaddock_mainImage").src = src;
 }
+
+// Marke用の画像を変更する関数
+function changeMarkeImage(src) {
+    document.getElementById("marke_mainImage").src = src;
+}
+
 function closeModal() {
-    console.log('test');
     $('body').removeClass('overflow-hidden');
     $('#modal').addClass('hidden');
     $('#overlay').addClass('hidden');
